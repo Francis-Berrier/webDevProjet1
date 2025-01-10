@@ -60,6 +60,11 @@ a {
     color: var(--main-bg-color)
 }
 
+h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
 h4{
     font-size: 16px;
     font-weight: 300;
@@ -69,30 +74,34 @@ h4{
 /****** Header *********/
 
 .header_container{
-    width: 1080px;;
-    height: 60px;
+    width: 100%;
+    height: 79px;
     display:flex;
     flex-direction:row; 
     box-sizing: border-box;
+    margin-top: 0%;
 }
 
 .menu {
-    width: 120px;
+    width: 27%;
     height: 30px;
     margin-left: auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    column-gap: 60%;
+    column-gap: 40%;
     padding-bottom: 25px;
     
 }
 
-.menu_item{
+.menu .menu_item{
+    max-width: 100%;
     width:fit-content;
     padding-left: 3px;
     padding-right: 3px;
     height:30px;
     margin-top: 0px;
+    box-sizing: border-box;
     
 }
 
@@ -102,19 +111,97 @@ h4{
 }
 
 .logo{
+    display: flex;
     width: 101px;
-    height: max-content;
-    padding-top: 16px;
-    padding-bottom: 15px;
+    align-items: center;
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .logo img{
-    position: center;
    width: 61px;
    height: 19px;
 }
 
+/*********** Research ***************/
+
+.research{
+    width: 100%;
+    height: 332px;
+   
+    display:flex;
+    flex-direction:column; 
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+}
+
+/*********** Search bar ***************/
+
+.search-bar{
+    width: 100%;
+    height: 85px;
+    padding-top: 35px ;
+    display:flex;
+
+}
+
+/*********** Filters ***************/
+
+.filters{
+    width: 100%;
+    height: 85px;
+    padding-top: 35px ;
+    display:flex;
+    flex-direction: row;
+    column-gap: 15px;
+
+}
+
+.filters .filter-button{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    cursor: pointer;
+    
+}
+
+.filters .filter-button:hover{
+    background-color: #DEEBFF;
+}
+
+/*********** Infos ***************/
+.infos{
+    width: 100%;
+    height: 59px;
+    padding-top: 35px ;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.info-logo {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 10px;
+    color:#0065FC;
+}
 
 
 /****** Hebergements And Populaires ***********/
