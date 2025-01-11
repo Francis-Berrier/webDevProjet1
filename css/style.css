@@ -65,6 +65,12 @@ h1{
     font-weight: bold;
 }
 
+h3{
+    font-size: 16px;
+    font-weight: bold;
+
+} 
+
 h4{
     font-size: 16px;
     font-weight: 300;
@@ -261,6 +267,68 @@ h4{
 .hebergements {
     width: 65%;
 }
+
+.hebergements-cards{
+    padding-top: 30px;
+    width: 100%;
+    height:90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /*margin-bottom: 30px;*/
+ 
+}
+
+.hebergements-cards .card{
+    display: flex;
+    flex-direction: column;
+    min-width: 230px;
+    height: 200px;
+    box-sizing: border-box;
+}
+    
+
+.hebergements-cards img{
+    height:95px;
+    width:100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-content{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-top: 0;
+    margin-left: 10px;
+    box-sizing: border-box;
+
+    
+}
+
+.hebergements .card-txt{
+
+}
+
+.hebergements-cards .card-title{
+    margin: 0px;
+    padding-top: 5px;
+
+}
+
+.hebergements .card-subtitle{
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 14px;
+   
+}
+
+.hebergements .card-rating{
+    margin-top: 10px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
