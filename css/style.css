@@ -18,6 +18,8 @@ body {
     justify-content: center;
 }
 
+
+
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -58,6 +60,196 @@ a {
     color: var(--main-bg-color)
 }
 
+h1{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: bold;
+
+} 
+
+h4{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0%;
+    padding-top: 10px;
+}
+/****** Header *********/
+
+.header_container{
+    width: 100%;
+    height: 79px;
+    display:flex;
+    flex-direction:row; 
+    box-sizing: border-box;
+    margin-top: 0%;
+}
+
+.menu {
+    width: 27%;
+    height: 30px;
+    margin-left: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    column-gap: 40%;
+    padding-bottom: 25px;
+    
+}
+
+.menu .menu_item{
+    max-width: 100%;
+    width:fit-content;
+    padding-left: 3px;
+    padding-right: 3px;
+    height:30px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    
+}
+
+.menu_link:hover{
+    border-top: #0065FC solid;
+    color: #0065FC;
+}
+
+.logo{
+    display: flex;
+    width: 101px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo img{
+   width: 61px;
+   height: 19px;
+}
+
+/*********** Research ***************/
+
+.research{
+    width: 100%;
+    height: 332px;
+   
+    display:flex;
+    flex-direction:column; 
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+}
+
+/*********** Search bar ***************/
+
+.search-bar{
+    width: 100%;
+    height: 85px;
+    margin-top: 30px;
+    display:flex;
+    flex-direction: row;
+
+}
+
+.search-bar .fa-solid{
+    color:black;
+}
+
+.search-bar .gps{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px 0px 0px 15px;
+    border: 0;
+}
+
+.search-bar .searchfield{
+    font-size: 18px;
+    font-weight: bold;
+    width: 195px;
+    border:0;
+    padding-left: 10px;
+    border-bottom: #F2F2F2 1px solid;
+    border-top: #F2F2F2 1px solid;
+}
+
+.search-bar .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 132px;
+    border: 0;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+}
+
+
+/*********** Filters ***************/
+
+.filters{
+    width: 100%;
+    height: 85px;
+    margin-top: 35px ;
+    display:flex;
+    flex-direction: row;
+    column-gap: 15px;
+
+}
+
+.filters .filter-button{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    cursor: pointer;
+    
+}
+
+.filters .filter-button:hover{
+    background-color: #DEEBFF;
+}
+
+/*********** Infos ***************/
+.infos{
+    width: 100%;
+    height: 59px;
+    margin-top: 35px ;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.info-logo {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 10px;
+    color:#0065FC;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -75,6 +267,68 @@ a {
 .hebergements {
     width: 65%;
 }
+
+.hebergements-cards{
+    padding-top: 30px;
+    width: 100%;
+    height:90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /*margin-bottom: 30px;*/
+ 
+}
+
+.hebergements-cards .card{
+    display: flex;
+    flex-direction: column;
+    min-width: 230px;
+    height: 200px;
+    box-sizing: border-box;
+}
+    
+
+.hebergements-cards img{
+    height:95px;
+    width:100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-content{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-top: 0;
+    margin-left: 10px;
+    box-sizing: border-box;
+
+    
+}
+
+.hebergements .card-txt{
+
+}
+
+.hebergements-cards .card-title{
+    margin: 0px;
+    padding-top: 5px;
+
+}
+
+.hebergements .card-subtitle{
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 14px;
+   
+}
+
+.hebergements .card-rating{
+    margin-top: 10px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
