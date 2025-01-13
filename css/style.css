@@ -140,7 +140,7 @@ h4{
     margin-bottom: 15px;
 }
 .research .title-text h1{
-    margin: 0px;    
+    margin: 0px 0px 10px;    
 }
 .research .title-text p{
     margin: 0px;
@@ -149,7 +149,7 @@ h4{
 /*********** Search bar ***************/
 
 .search-bar{
-    width: 27%;
+    width: 377px;
     height: 50px;
     display:flex;
     flex-direction: row;
@@ -190,23 +190,56 @@ h4{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
     width: 35%;
     height: 50px;
     border: 0;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
+}
+
+.search-bar .submit .text{
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
     color: #FFFFFF;
 }
 
+.search-bar .submit .icon{
+    display: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.search-bar .submit .fa-solid{
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
 
 /*********** Filters ***************/
 
 .filters{
-    width: 55%;
-    height: 50px;
+    width: 758px;
     display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.filters .title h3{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.filters .filters-types{
+    width: 689px;
+    height: 50px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
@@ -217,15 +250,25 @@ h4{
     flex-direction: row;
     width: fit-content;
     height: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 2px solid #ccc;
     border-radius: 25px;
     justify-content: center;
     align-items: center;
     column-gap: 8px;
     cursor: pointer;
-    
+    box-sizing: border-box;
+}
+
+.filter-button .fa-solid{
+    font-size: 22px;
+}
+
+.filter-button h4{
+    padding:0;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .filters .filter-button:hover{
@@ -276,12 +319,12 @@ h4{
 
 .hebergements-cards{
     margin-top: 30px;
-    /*margin-bottom: 10px;*/
+    margin-bottom: 30px;
     width: 100%;
-    height:85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 30px;
     box-sizing: border-box;
 }
 
@@ -336,6 +379,10 @@ h4{
     box-sizing: border-box;
 }
 
+.hebergements .afficher-plus h3{
+    margin:0;
+}
+
 
 /****** Populaires ***********/
 .populaires {
@@ -384,11 +431,15 @@ h4{
 
 /**********Activités**************/
 .activites{
+    margin: 35px 0px;
     width:100%;
     display:flex;
     flex-direction: column;
     padding: 30px;
     box-sizing: border-box;
+}
+.activites-title h2{
+    margin:0;
 }
 
 .activites-cards{
@@ -419,13 +470,12 @@ h4{
     margin-left: 15px;
     align-items: center;
     box-sizing: border-box;
-    /*border: #0065FC solid 1px;*/
 }
 
 /***********Footer************/
 
 .footer{
-    padding: 0px 15px 10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -444,6 +494,11 @@ h4{
     box-sizing: border-box;
 }
 
+.footer-column h3{
+    font-size: 18;
+    font-weight: bold;
+}
+
 .footer-column ul{
     display: flex;
     flex-direction: column;
@@ -451,7 +506,10 @@ h4{
     list-style: none;
     margin: 0px;
     padding: 0px;
-    font-weight: 16px;
+}
+
+.footer-column li{
+    font-size: 16px;
 }
 
 
@@ -482,12 +540,29 @@ h4{
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filters{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+        
+    }    
+   
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
+    }
+
+    .hebergements .card-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .hebergements .card-subtitle {
+        font-size: 14px;
     }
 
     .populaires {
@@ -511,6 +586,18 @@ h4{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites-cards a{
+        width: 22.4%;
+    }
+
+    .activites-cards img{
+        height: 200px;
+
+    }
+     .activites-cards .card-txt{
+        height: 70px;
     }
 }
 
