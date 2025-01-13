@@ -89,43 +89,38 @@ h4{
 }
 
 .menu {
-    width: 27%;
+    width: 244px;
     height: 30px;
     margin-left: auto;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    column-gap: 40%;
+    justify-content: space-between;
     padding-bottom: 25px;
-    
 }
 
-.menu .menu_item{
-    max-width: 100%;
+.menu .menu-item{
     width:fit-content;
     padding-left: 3px;
     padding-right: 3px;
     height:30px;
     margin-top: 0px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 
-.menu_link:hover{
+.menu-link:hover{
     border-top: #0065FC solid;
     color: #0065FC;
 }
 
 .logo{
     display: flex;
-    width: 101px;
+    width: 61px;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .logo img{
-   width: 61px;
+   width: 100%;
    height: 19px;
 }
 
@@ -133,24 +128,33 @@ h4{
 
 .research{
     width: 100%;
-    height: 332px;
-   
     display:flex;
     flex-direction:column; 
     box-sizing: border-box;
+    row-gap: 30px;
     margin-top: 30px;
     margin-bottom: 35px;
 
+}
+.research .title-text{
+    margin-bottom: 15px;
+}
+.research .title-text h1{
+    margin: 0px;    
+}
+.research .title-text p{
+    margin: 0px;
 }
 
 /*********** Search bar ***************/
 
 .search-bar{
-    width: 100%;
-    height: 85px;
-    margin-top: 30px;
+    width: 27%;
+    height: 50px;
     display:flex;
     flex-direction: row;
+    box-sizing: border-box;
+   
 
 }
 
@@ -162,8 +166,9 @@ h4{
     display:flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     font-size: 20px;
-    width: 50px;
+    width: 13%;
     height: 50px;
     border-radius: 15px 0px 0px 15px;
     border: 0;
@@ -172,7 +177,8 @@ h4{
 .search-bar .searchfield{
     font-size: 18px;
     font-weight: bold;
-    width: 195px;
+    width: 52%;
+    height: 50px;
     border:0;
     padding-left: 10px;
     border-bottom: #F2F2F2 1px solid;
@@ -183,9 +189,11 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    width: 132px;
+    width: 35%;
+    height: 50px;
     border: 0;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
@@ -196,13 +204,12 @@ h4{
 /*********** Filters ***************/
 
 .filters{
-    width: 100%;
-    height: 85px;
-    margin-top: 35px ;
+    width: 55%;
+    height: 50px;
     display:flex;
     flex-direction: row;
-    column-gap: 15px;
-
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .filters .filter-button{
@@ -228,12 +235,11 @@ h4{
 /*********** Infos ***************/
 .infos{
     width: 100%;
-    height: 59px;
-    margin-top: 35px ;
+    height: 24px;
     display:flex;
     flex-direction: row;
     align-items: center;
-    column-gap: 10px;
+    box-sizing: border-box;
 }
 
 .info-logo {
