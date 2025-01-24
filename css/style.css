@@ -243,7 +243,7 @@ input[type="search"]:focus{
 /*********** Filters ***************/
 
 .filters{
-    width: 758px;
+    max-width: 758px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -265,6 +265,7 @@ input[type="search"]:focus{
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
+    
 }
 
 .filters .filter-button{
@@ -352,7 +353,7 @@ input[type="search"]:focus{
 
 .hebergements-cards a{
     flex: 0 0 30.87%;
-    height: 210px;
+    height: 207.25px;
 }
 
 .hebergements-cards .card{
@@ -361,6 +362,7 @@ input[type="search"]:focus{
     flex-direction: column;
     box-sizing: border-box;
 }
+
     
 .hebergements-cards img{
     height:114px;
@@ -377,25 +379,29 @@ input[type="search"]:focus{
     margin-top: 0;
     margin-left: 10px;
     box-sizing: border-box;
+    
 }
 
 .hebergements .card-txt{
-
+    
 }
 
 .hebergements-cards .card-title{
     margin-top: 5px;
     box-sizing: border-box;
+    
 }
 
 .hebergements .card-subtitle{
     margin-top: 10px;
     font-size: 14px;
+    
 }
 
 .hebergements .card-rating{
-    margin: 10px 0px;
+    margin: 5px 0;
     box-sizing: border-box;
+    
 }
 
 .hebergements .card-rating .fa-solid{
@@ -553,35 +559,19 @@ input[type="search"]:focus{
 
 /****** Media queries ***********/
 
-/* small desktop (1024px < Device < 1170px)*/
-
-@media (max-width: 1170px) {
-    .hebergements .card-title {
-        font-size: 13px;
-        font-weight: 700;
-    }
-
-    .hebergements .card-subtitle {
-        font-size: 12px;
-    }
-    .populaires .card-title {
-        font-size: 13px;
-        font-weight: 700;
-    }
-
-    .populaires .card-subtitle {
-        font-size: 12px;
-    }
-}
-
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
     .filters{
+        max-width: 689px;
         flex-direction: column;
         align-items: flex-start;
         row-gap: 20px;
-    }    
+        box-sizing: border-box;
+    } 
+    .filters .filters-types{
+        width: 100%;
+    } 
    
     .hebergements-and-populaires {
         flex-direction: column;
