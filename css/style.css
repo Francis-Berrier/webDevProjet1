@@ -1,4 +1,5 @@
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -8,7 +9,7 @@
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
+    --filtres-bg-color: #DEEBFF;
 }
 
 .fa-solid {
@@ -19,8 +20,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-
 
 .main-container {
     width: 100%;
@@ -80,7 +79,7 @@ h4{
 }
 /****** Header *********/
 
-.header_container{
+header{
     width: 100%;
     height: 79px;
     display:flex;
@@ -89,7 +88,7 @@ h4{
     margin-top: 0%;
 }
 
-.menu {
+header .menu {
     width: 244px;
     height: 30px;
     margin-left: auto;
@@ -100,44 +99,44 @@ h4{
     padding-bottom: 25px;
 }
 
-.menu-link{
+header .menu-link{
     width:fit-content;
     height:30px;
     margin-top: 0px;
     box-sizing: border-box;  
 }
 
-.menu-item{
+header .menu-item{
     padding-left: 3px;
     padding-right: 3px;
 }
 
-.menu-item h4{
+header .menu-item h4{
     font-size: 16px;
     font-weight: 300;
     margin: 0%;
     padding-top: 10px;
 }
 
-.menu-link:hover{
+header .menu-link:hover{
     border-top: #0065FC solid;
     color: #0065FC;
 }
 
-.logo{
+header .logo{
     display: flex;
     width: 61px;
     align-items: center;
 }
 
-.logo img{
+header .logo img{
    width: 100%;
    height: 19px;
 }
 
-/*********** Research ***************/
+/*********** Recherche ***************/
 
-.research{
+.recherche{
     width: 100%;
     display:flex;
     flex-direction:column;
@@ -147,19 +146,21 @@ h4{
     margin-bottom: 35px;
 
 }
-.research .title-text{
+.recherche .title-text{
     margin-bottom: 0;
 }
-.research .title-text h1{
+
+.recherche .title-text h1{
     margin: 0px 0px 10px;    
 }
-.research .title-text p{
+
+.recherche .title-text p{
     margin: 0px;
 }
 
-/*********** Search bar ***************/
+/*********** Barre de recherche ***************/
 
-.search-bar{
+.barre-recherche{
     /*height: 50px;*/
     width: 100%;
     display:flex;
@@ -168,11 +169,11 @@ h4{
     box-sizing: border-box;
 }
 
-.search-bar .fa-solid{
+.barre-recherche .fa-solid{
     color:black;
 }
 
-.search-bar .gps{
+.barre-recherche .gps{
     display:flex;
     align-items: center;
     justify-content: center;
@@ -185,7 +186,7 @@ h4{
     box-sizing: border-box;
 }
 
-.search-bar .searchfield{
+.barre-recherche .searchfield{
     font-size: 18px;
     font-weight: bold;
     flex: 0 0 195px;
@@ -197,19 +198,19 @@ h4{
     box-sizing: border-box;
 }
 
-input[type="search"]:focus{
+.barre-recherche .searchfield input[type="search"]:focus{
     outline: #F2F2F2 1px solid;
     border: none;
 }
 
-.search-bar .submit-container{
+.barre-recherche .submit-container{
     flex: 0 0 132px;
     height: 50px;
     border: 0;
     box-sizing: border-box;
 }
 
-.search-bar .submit{
+.barre-recherche .submit{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,27 +223,27 @@ input[type="search"]:focus{
     box-sizing: border-box;
 }
 
-.search-bar .submit .text{
+.barre-recherche .submit .text{
     display: inline;
     font-size: 18px;
     font-weight: bold;
     color: #FFFFFF;
 }
 
-.search-bar .submit .icon{
+.barre-recherche .submit .icon{
     display: none;
 }
 
-.search-bar .submit .fa-solid{
+.barre-recherche .submit .fa-solid{
     color: #FFFFFF;
     font-size: 17px;
     font-weight: bold;
     
 }
 
-/*********** Filters ***************/
+/*********** Filtres ***************/
 
-.filters{
+.filtres{
     max-width: 758px;
     display:flex;
     flex-direction: row;
@@ -251,7 +252,7 @@ input[type="search"]:focus{
     box-sizing: border-box;
 }
 
-.filters .title h3{
+.filtres .title h3{
     padding: 0;
     margin: 0;
     font-size: 18px;
@@ -259,7 +260,7 @@ input[type="search"]:focus{
     box-sizing: border-box;
 }
 
-.filters .filters-types{
+.filtres .filtres-types{
     width: 689px;
     display: flex;
     flex-direction: row;
@@ -268,7 +269,7 @@ input[type="search"]:focus{
     
 }
 
-.filters .filter-button{
+.filtres .filtres-button{
     display: flex;
     flex-direction: row;
     width: fit-content;
@@ -284,17 +285,17 @@ input[type="search"]:focus{
     box-sizing: border-box;
 }
 
-.filter-button .fa-solid{
+.filtres-button .fa-solid{
     font-size: 22px;
 }
 
-.filter-button h4{
+.filtres-button h4{
     padding:0;
     font-size: 17px;
     font-weight: bold;
 }
 
-.filters .filter-button:hover{
+.filtres .filtres-button:hover{
     background-color: #DEEBFF;
 }
 
@@ -323,6 +324,7 @@ input[type="search"]:focus{
 
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -335,6 +337,7 @@ input[type="search"]:focus{
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
     background-color: var(--main-bg-color);
@@ -382,10 +385,6 @@ input[type="search"]:focus{
     
 }
 
-.hebergements .card-txt{
-    
-}
-
 .hebergements-cards .card-title{
     margin-top: 5px;
     box-sizing: border-box;
@@ -416,6 +415,7 @@ input[type="search"]:focus{
 
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
     background-color: var(--main-bg-color);
@@ -468,6 +468,7 @@ input[type="search"]:focus{
 }
 
 /**********Activités**************/
+
 .activites{
     margin: 35px 0px;
     width:100%;
@@ -560,16 +561,17 @@ input[type="search"]:focus{
 /****** Media queries ***********/
 
 /* Medium devices (tablets, less/equal than 1024px) */
+
 @media (max-width: 1024px) {
 
-    .filters{
+    .filtres{
         max-width: 689px;
         flex-direction: column;
         align-items: flex-start;
         row-gap: 20px;
         box-sizing: border-box;
     } 
-    .filters .filters-types{
+    .filtres .filtres-types{
         width: 100%;
     } 
    
@@ -629,6 +631,7 @@ input[type="search"]:focus{
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
    
     .main-container {
@@ -636,7 +639,8 @@ input[type="search"]:focus{
     }
     
     /*******header*******/
-    .header_container{
+
+    header{
         height: 115px;
         display:flex;
         flex-direction:column; 
@@ -645,11 +649,11 @@ input[type="search"]:focus{
         margin-top: 0%;
     }
 
-    .logo{
+    header .logo{
         padding: 30px 0;
     }
 
-    .menu {
+    header .menu {
         width: 100%;
         height: 36px;
         margin: 0;
@@ -659,7 +663,7 @@ input[type="search"]:focus{
         padding-bottom: 0;
     }
     
-    .menu-link{  
+    header .menu-link{  
         display:flex;
         justify-content: center;
         width:50%;
@@ -668,42 +672,42 @@ input[type="search"]:focus{
         box-sizing: border-box;  
     }
     
-    .menu-link:hover{
+    header .menu-link:hover{
         border-top: none;
         border-bottom: #0065FC solid;
         color: #0065FC;
     
     }
 
-    .menu-item h4{
+    header .menu-item h4{
         padding-top: 0;
         padding-bottom: 10px;
     }
 
     /*********** Research ***************/
 
-    .research{
+    .recherche{
         padding: 35px 20px;
         margin: 0;
         row-gap: 35px;
     }
     
-    .search-bar{
+    .barre-recherche{
         justify-content: center;
         box-sizing: border-box;
     }
 
-    .search-bar .gps{
+    .barre-recherche .gps{
         flex: 0 1 50px;
         min-width: 10px;
     }
 
-    .search-bar .searchfield{
+    .barre-recherche .searchfield{
         flex: 0 1 235px;
         min-width: 100px;
     }
 
-    .search-bar .submit-container{
+    .barre-recherche .submit-container{
         flex:0 1 50px;
         min-width: 10px;
         border-bottom: #F2F2F2 1px solid;
@@ -711,24 +715,24 @@ input[type="search"]:focus{
         border-radius: 0 15px 15px 0;
         box-sizing: border-box;
     }
-    .search-bar .submit{
+    .barre-recherche .submit{
         width: 100%;
         border-radius: 15px;
         filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.5));     
     }
 
-    .search-bar .submit .text{
+    .barre-recherche .submit .text{
         display: none;
     }
 
-    .search-bar .submit .icon{
+    .barre-recherche .submit .icon{
         display: inline;
     }
 
-    .filters{
+    .filtres{
         width:100%;
     }
-    .filters .filters-types{
+    .filtres .filtres-types{
         width:100%;
         flex-wrap: wrap;
         column-gap: 10px;
@@ -736,11 +740,11 @@ input[type="search"]:focus{
         justify-content: center;
     }
 
-    .filters .filter-button{
+    .filtres .filtres-button{
         width: 48%;
     }
 
-    .filter-button h4{
+    .filtres-button h4{
         font-size: 14px;
     }
 
@@ -853,6 +857,4 @@ input[type="search"]:focus{
     .footer-column{
         width: fit-content;
     }
-    
-
 }
