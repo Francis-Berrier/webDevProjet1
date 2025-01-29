@@ -310,6 +310,7 @@ header .logo img{
 }
 
 .info-logo {
+    margin-right: 10px;
     display: flex;
     width: 24px;
     height: 24px;
